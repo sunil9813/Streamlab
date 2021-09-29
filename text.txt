@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+/*---------color------*/
+color: #E50916;
+
+
+/*---------color------*/
+
+
+/*---------background------*/
+background: #E50916;
+background: linear-gradient(to right, rgba(34, 31, 31, 1) 0%, rgba(34, 31, 31, 0.4) 100%)
+
+
+/*---------background------*/
+
+
+
+/*---------icon------*/
+<i class="fas fa-search"></i>
+<i class="fas fa-user"></i>
+
+<i class="fas fa-circle"></i>
+<i class="fas fa-play"></i>
+
+<i class="far fa-heart"></i>
+<i class="fas fa-share-alt"></i>
+<i class="fas fa-plus"></i>
+
+
+<i class="fab fa-facebook-square"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-twitter-square"></i>
+<i class="fab fa-youtube-square"></i>
+/*---------icon------*/

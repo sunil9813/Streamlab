@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #161616;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*---------global------*/
+.container {
+  max-width: 95%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+i {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/*---------global------*/
+/*---------header------*/
+.home {
+  color: white;
+  background-image: url("../image/home.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.logo img {
+  width: 250px;
+}
+
+.headerbg {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(34, 31, 31, 1) 0%, rgba(34, 31, 31, 0.4) 100%)
+}
+
+header {
+  height: 10vh;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+header .navbar {
+  align-items: center;
+  transition: 0.5s;
+}
+
+header nav ul {
+  display: inline-block;
+  font-size: 16px;
+}
+
+header nav ul li a {
+  color: white;
+  transition: all 300ms ease-in-out;
+}
+
+header nav ul li a:hover {
+  color: #E50916;
+}
+
+header nav ul li {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+header .navbar span {
+  text-align: center;
+  margin-left: 20px;
+  color: black;
+  font-size: 25px;
+  display: none;
+}
+
+.subscribe i:nth-child(1) {
+  margin-top: 17px;
+}
+
+.subscribe i {
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+#palybtn {
+  background: #E50916;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+button {
+  background: #E50916;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0px 30px;
+  cursor: pointer;
+}
+
+.subscribe button {
+  margin-left: 15px;
+}
+
+header.sticky .headerbg {
+  position: relative;
+}
+
+header.sticky {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #000;
+  transition: 0.5s;
+  height: 10vh;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+
+header.sticky .subscribe {
+  display: none;
+}
+
+@media only screen and (max-width:768px) {
+  header nav ul {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background: #000;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    z-index: 100;
+  }
+
+  header nav ul li {
+    display: block;
+    margin: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  header .navbar span {
+    color: white;
+    display: block;
+    cursor: pointer;
+  }
+
+  .home {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+  }
+
+  .subscribe {
+    display: none;
+  }
+}
+
+/*---------home_content------*/
+.left, .right {
+  width: 50%;
+}
+
+.top {
+  margin-top: 10%
+}
+
+.mtop {
+  margin-top: 5%
+}
+
+h1 {
+  font-size: 80px;
+  letter-spacing: 2px;
+  line-height: 90px;
+  text-transform: uppercase;
+}
+
+.time {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+
+.time label {
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  text-align: center;
+  line-height: 40px;
+}
+
+.time i {
+  font-size: 5px;
+  line-height: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.home_content p {
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.btn {
+  padding: 20px 40px;
+  margin-right: 20px;
+}
+
+.home_content #palybtn {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: white;
+  color: #E50916;
+}
+
+.button {
+  margin-top: 30px;
+}
+
+.button p {
+  margin-top: 12px;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+/*---------header------*/
+/*---------popular------*/
+.heading h2 {
+  font-size: 25px;
+  font-weight: 400;
+  color: white;
+}
+
+.heading {
+  margin-bottom: 30px;
+}
+
+.heading button {
+  padding: 15px 50px;
+}
+
+.popular {
+  color: white;
+}
+
+/*---------image_hover------*/
+.popular .box {
+  position: relative;
+  background: #221F1F;
+  width: 100%;
+  cursor: pointer;
+}
+
+.popular .box .imgBox {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.popular .box .imgBox img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.popular .box:hover .imgBox img {
+  opacity: .6;
+  transform: scale(1.2);
+}
+
+.popular .box .content {
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  left: 40%;
+  z-index: 2;
+}
+
+.popular .box .content i {
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.popular .box:hover .content i {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popular #palybtn {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+}
+
+/*----icon------*/
+.popular .icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.popular .icon i {
+  font-size: 20px;
+  margin: 10px;
+}
+
+/*----text------*/
+.popular .text {
+  padding: 20px;
+}
+
+.popular .time {
+  margin: 0;
+}
+
+.popular .time a {
+  color: #E50916;
+}
+
+.owl-s .dots span {
+  font-size: 20px;
+  color: white;
+}
+
+.owl-nav span {
+  font-size: 50px;
+  color: white;
+}
+
+.owl-prev, .owl-next {
+  position: absolute;
+  top: 25%;
+}
+
+.owl-prev {
+  left: -20px;
+}
+
+.owl-next {
+  right: -20px;
+}
+
+/*---------popular------*/
+/*---------new_realase------*/
+.new_realase {
+  color: white;
+}
+
+.heading h2 {
+  margin-bottom: 20px;
+}
+
+.heading h2 span {
+  border-left: 3px solid #E50916;
+  margin-right: 30px;
+  font-weight: bold;
+}
+
+.time h3 {
+  font-size: 50px;
+}
+
+.new_realase .time img {
+  width: 60px !important;
+  height: 60px;
+  margin-top: -10px;
+  margin-right: 10px;
+}
+
+.new_realase .items {
+  border-left: 3px solid #E50916;
+  padding: 40px;
+  height: 85vh;
+}
+
+.new_realase .img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  z-index: -1;
+}
+
+.new_realase .items {
+  width: 100%;
+  background: linear-gradient(to right, rgba(34, 31, 31, 1) 0%, rgba(34, 31, 31, 0.4) 100%)
+}
+
+.new_realase p {
+  font-size: 18px;
+  line-height: 35px;
+}
+
+/*---------new_realase------*/
+/*---------footer------*/
+footer {
+  background: #221F1F;
+  color: white;
+}
+
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+footer .box {
+  margin-top: 50px;
+}
+
+footer .box i {
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+footer h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+footer ul li {
+  margin-bottom: 15px;
+  opacity: 0.7;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+footer ul li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+footer .ul {
+  margin-left: 50px;
+}
+
+footer p {
+  margin-bottom: 20px;
+  opacity: 0.7;
+  line-height: 30px;
+}
+
+footer .img img {
+  margin: 5px;
+  width: auto;
+  height: auto;
+}
+
+footer .box li:hover,
+footer .box i:hover {
+  color: #E50916;
+}
+
+.legal {
+  text-align: center;
+  background: #E50916;
+  padding: 20px;
+  margin: 0;
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+/*---------footer------*/
+@media only screen and (max-width:768px) {
+  .left {
+    width: 100%;
+  }
+
+  .new_realase .items {
+    height: 65vh;
+  }
+
+  footer .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width:511px) {
+  header nav ul {
+    top: 70px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .time p {
+    margin-top: 10px;
+  }
+
+  .left p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .time button {
+    padding: 5px 10px;
+  }
+
+  .heading {
+    margin-top: 50px;
+  }
+
+  .owl-prev {
+    left: 20px;
+  }
+
+  .owl-next {
+    right: 20px;
+  }
+
+  .new_realase .items {
+    height: 80vh;
+  }
+
+  .new_realase .button button {
+    padding: 10px;
+  }
+
+  .new_realase .time label,
+  .new_realase .time img,
+  .new_realase .time p {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .new_realase .time button {
+    display: none;
+  }
+
+  .new_realase .time i {
+    display: none;
+  }
+
+  footer .container {
+    padding: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  footer .img img {
+    width: 150px;
+  }
+}
